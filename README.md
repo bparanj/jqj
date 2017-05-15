@@ -1,3 +1,9 @@
+
+rails new jqj --webpack
+
+
+
+
 yarn add jquery
 
 brew install yarn
@@ -58,4 +64,69 @@ localhost:3000
 
 Reload:
 localhost:3000
+
+Ajaxify
+
+Create a new task.
+
+Uncaught ReferenceError: $ is not defined
+
+in the developer console.
+
+//= jquery
+
+in application.js:
+
+//= require rails-ujs
+//= require turbolinks
+//= jquery  
+//= require_tree .
+
+Uncaught ReferenceError: $ is not defined
+
+
+$rake yarn:install
+env: node: No such file or directory
+
+node -v
+-bash: node: command not found
+
+brew uninstall node
+Error: Refusing to uninstall /usr/local/Cellar/node/7.10.0
+because it is required by yarn 0.21.3, yarn 0.24.4, which are currently installed.
+You can override this and force removal with:
+  brew uninstall --ignore-dependencies node
+  
+brew uninstall --ignore-dependencies node  
+brew uninstall --force node
+
+
+https://nodejs.org/en/download/
+
+
+node -v
+v6.10.3
+
+rake yarn:install
+yarn install v0.24.4
+[1/4] 🔍  Resolving packages...
+success Already up-to-date.
+Done in 0.17s.
+
+
+
+rails new jqj --webpack
+
+couldn't find file 'jquery' with type 'application/javascript' 
+
+gem 'jquery-rails'
+bundle
+
+
+<script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="reload"></script>
+
+
+http://pixelatedworks.com/articles/embracing-change-rails51-adopts-yarn-webpack-and-the-js-ecosystem/
+
+
 
